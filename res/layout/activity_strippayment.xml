@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@mipmap/ic_launcher" android:layout_weight="2.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+            <TextView android:textStyle="bold" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" />
+            <TextView android:textStyle="bold" android:id="@id/txt_total" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Total Amount : $10102" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="Enter your card number" />
+        <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <com.stripe.android.view.CardInputWidget android:id="@id/cardInputWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+        <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <Button android:textStyle="bold" android:textColor="@color/white" android:id="@id/payButton" android:background="@drawable/rounded_button" android:layout_width="150.0dip" android:layout_height="42.0dip" android:text="Pay" />
+    </LinearLayout>
+</LinearLayout>

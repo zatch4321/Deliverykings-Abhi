@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="1.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="42.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="@color/black" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clear_cart" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="90.0dip" android:foreground="?android:selectableItemBackground">
+            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/your_cart_has_an_o" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_crear" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/clear_cart" android:layout_weight="1.0" android:elevation="7.0dip" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/txt_no" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/no" android:layout_weight="1.0" android:elevation="7.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

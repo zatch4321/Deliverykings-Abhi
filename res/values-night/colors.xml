@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#ffffffff</color>
+    <color name="black1">#fff6f1f1</color>
+    <color name="colorAccent">#ffffb500</color>
+    <color name="colorcuoruierbg">#ff00ce9b</color>
+    <color name="colorrstb">#ff404040</color>
+    <color name="stripe_3ds2_accent">#ff5a5a5a</color>
+    <color name="stripe_3ds2_background">#ff303030</color>
+    <color name="stripe_3ds2_chevron">#80ffffff</color>
+    <color name="stripe_3ds2_control_activated">#ffc1c1c1</color>
+    <color name="stripe_3ds2_divider">#ffa5a5a5</color>
+    <color name="stripe_3ds2_primary">#ff1f1f1f</color>
+    <color name="stripe_3ds2_primary_dark">#ff000000</color>
+    <color name="stripe_3ds2_text_color">#ffe1e1e1</color>
+    <color name="stripe_3ds2_text_info_toggled">#ffa1a1a1</color>
+    <color name="stripe_3ds2_text_input_fill">#ff353535</color>
+    <color name="stripe_3ds2_text_input_hint">#ff7a7a7a</color>
+    <color name="stripe_color_text_secondary_default">#ffe1e1e1</color>
+    <color name="stripe_color_text_unselected_primary_default">#ffe1e1e1</color>
+    <color name="stripe_color_text_unselected_secondary_default">#ffa5a5a5</color>
+    <color name="stripe_control_normal_color_default">#ffe1e1e1</color>
+    <color name="stripe_text_color_secondary">@android:color/secondary_text_dark</color>
+    <color name="stripe_toolbar_color_default">#ff1f1f1f</color>
+    <color name="stripe_toolbar_color_default_dark">#ff000000</color>
+    <color name="white">#ff171a29</color>
+</resources>

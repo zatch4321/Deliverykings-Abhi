@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:id="@id/img_back" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/ic_left_arrow" />
+            <LinearLayout android:gravity="right" android:layout_gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_addmunny" android:background="@drawable/rounded_button" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_money" android:drawableRight="@drawable/ic_add" android:drawablePadding="2.0dip" android:drawableTint="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="230.0dip" android:layout_margin="5.0dip" app:cardCornerRadius="25.0dip" app:elevation="5.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="230.0dip" app:cardCornerRadius="25.0dip">
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/ic_wallet_card" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="230.0dip">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/txt_walletname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ghjhhjgghj" />
+                            <TextView android:textSize="10.0dip" android:textColor="#c4ededed" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Powered by cscodetech" />
+                            <View android:layout_width="fill_parent" android:layout_height="30.0dip" />
+                            <TextView android:textSize="14.0dip" android:textColor="#c4ededed" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Balance" />
+                            <TextView android:textSize="24.0dip" android:textColor="@color/white" android:id="@id/txt_total" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 98965648454844854" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="24.0dip" android:textColor="@color/black" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transaction" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recy_transaction" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/lvl_notfound" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:padding="10.0dip" android:layout_width="250.0dip" android:layout_height="250.0dip" android:src="@drawable/notfound" />
+                <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <TextView android:gravity="center" android:layout_width="250.0dip" android:layout_height="wrap_content" android:text="You haven't made any transaction using Wallet yet " />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

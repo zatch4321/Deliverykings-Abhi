@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_back" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/ic_left_arrow" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.5">
+                <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="10.0dip">
+                    <ImageView android:id="@id/iimg_restorent" android:layout_width="100.0dip" android:layout_height="70.0dip" android:src="@drawable/ic_wallet_card" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center|left" android:id="@id/txt_name" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textColor="@color/black" android:gravity="center|left" android:id="@id/txt_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textColor="#ffb1b2b7" android:gravity="center|left" android:id="@id/txt_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:hint="@string/enter_amount" android:layout_marginStart="11.0dip" android:layout_marginEnd="11.0dip">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="14.0dip" android:id="@id/ed_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_processd" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" android:text="@string/proceed_to_add_money" android:textAllCaps="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="12.0dip" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Note" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/colorgrey" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rul1" android:fontFamily="@font/gilroyblack" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/colorgrey" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rul2" android:fontFamily="@font/gilroyblack" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

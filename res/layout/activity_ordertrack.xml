@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutMap" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_arrow" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_orderid" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ORDER ID#" />
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:id="@id/txt_ordertime" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <ImageView android:id="@id/img_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_note" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/top_round_shape" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="10.0dip">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lvl_restorent" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+                    <ImageView android:id="@id/img_restorent" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:src="@drawable/emty" android:scaleType="fitXY" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center|left" android:id="@id/txt_rtitle" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:drawablePadding="5.0dip" />
+                        <TextView android:textSize="12.0dip" android:id="@id/txt_rstatus" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="3" android:lines="2" />
+                    </LinearLayout>
+                    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_rmobile" android:background="@drawable/rounded_button" android:padding="5.0dip" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/call" android:drawablePadding="5.0dip" />
+                </LinearLayout>
+                <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center|left" android:id="@id/txt_canceloreder" android:padding="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel_order" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+                    <RelativeLayout android:gravity="center" android:layout_width="270.0dip" android:layout_height="60.0dip" android:layout_weight="1.0">
+                        <ProgressBar android:id="@id/pb" android:visibility="visible" android:layout_width="150.0dip" android:layout_height="140.0dip" android:secondaryProgress="100" android:indeterminate="false" android:progressDrawable="@drawable/circular_progracebar" style="@android:style/Widget.ProgressBar.Horizontal" />
+                        <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/txt_count" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="10" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/lvl_deleveryboy" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/img_delivery" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_delivery_boy_assign" android:scaleType="fitXY" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/txt_deliveryboy" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Amit Zala" android:layout_weight="1.0" />
+                            <TextView android:textSize="12.0dip" android:id="@id/txt_dstatus" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="We'll assign a delivery partner when your food is just about ready" android:maxLines="3" />
+                        </LinearLayout>
+                        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_dmobile" android:background="@drawable/rounded_button" android:padding="5.0dip" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="Call" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/lvl_bottom"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/appbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:title="MyCart" android:titleTextColor="@color/black" app:layout_scrollFlags="scroll|enterAlways" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:layout_gravity="fill_vertical" android:id="@id/srcollview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout android:orientation="vertical" android:id="@id/lvl_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <ImageView android:id="@id/img_rest" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/emty" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_title" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Store title" />
+                        <TextView android:id="@id/txt_location" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="location" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_cart" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_additionnot" />
+                    <EditText android:textSize="14.0dip" android:id="@id/ed_note" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:hint="@string/addition_note" />
+                </LinearLayout>
+                <View android:background="@color/colorgrey1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/lvl_dtipview" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/ic_donate" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/black" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tip_your_hunger_saviour" />
+                            <TextView android:textSize="10.0dip" android:paddingLeft="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/thank_your_delivery" style="@style/Font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_tips" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+                </LinearLayout>
+                <View android:background="@color/colorgrey1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <LinearLayout android:gravity="center|left" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                    <ImageView android:padding="8.0dip" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_top_discount" />
+                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:id="@id/txt_applycode" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/applycoupon" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/img_coopncode" android:padding="10.0dip" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_coupon_arrow" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lvl_wallet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/colorgrey1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                    <LinearLayout android:gravity="center|left" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                        <ImageView android:padding="8.0dip" android:layout_width="52.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_wallet_card" android:scaleType="fitXY" />
+                        <TextView android:textSize="16.0dip" android:textStyle="bold" android:id="@id/txt_walletname" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/wallet" android:layout_weight="1.0" />
+                        <CheckBox android:id="@id/ch_wallet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="?android:listChoiceIndicatorMultiple" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/colorgrey1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:gravity="center|left" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bill_details" />
+                    <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" />
+                    <LinearLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_total" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_itemtotal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" />
+                    <LinearLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textColor="@color/colorsky" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delivery_fee" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_dcharge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_discount" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/colorsky" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/total_discount" android:layout_weight="1.0" style="@style/Font" />
+                            <TextView android:textColor="@color/colorgreen" android:gravity="center|right" android:id="@id/txt_discount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_scharge" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/store_charge" android:layout_weight="1.0" style="@style/Font" />
+                            <TextView android:gravity="center|right" android:id="@id/txt_scharge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_dtips" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delivery_tip" android:layout_weight="1.0" style="@style/Font" />
+                            <TextView android:gravity="center|right" android:id="@id/txt_deliverytip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_taxs" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/colorsky" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/taxes_and_charges" android:layout_weight="1.0" style="@style/Font" />
+                            <TextView android:gravity="center|right" android:id="@id/txt_tax" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_twal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/colorsky" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wallet_amount" android:layout_weight="1.0" style="@style/Font" />
+                            <TextView android:gravity="center|right" android:id="@id/txt_waltea" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip" />
+                    <LinearLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/to_pay" android:layout_weight="1.0" />
+                        <TextView android:textColor="@color/black" android:gravity="center|right" android:id="@id/txt_topay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textColor="@color/colorgrey1" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="---------------------------------------------------" android:singleLine="true" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/lvl_notfound" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="150.0dip" android:src="@drawable/notfound" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/good_food_" />
+            <TextView android:textSize="12.0dip" android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/your_cart_is_empty_" style="@style/Font" />
+            <View android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/colorPrimary" android:gravity="center" android:background="@drawable/box" android:padding="10.0dip" android:layout_width="180.0dip" android:layout_height="wrap_content" android:text="@string/browse_restaurants" android:onClick="onClickback" style="@style/Font" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/lvl_bottom" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_map_pin_address" />
+            <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delivery_to_work" />
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:id="@id/txt_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="surat" android:maxLines="3" />
+            </LinearLayout>
+            <View android:layout_width="10.0dip" android:layout_height="1.0dip" />
+            <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/txt_change" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/change" />
+            <View android:layout_width="10.0dip" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="5.0dip">
+                <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_process" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/proceed_to_pay" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/lvl_notlogin" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/almost_there" />
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_create_acc" android:maxLines="3" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_login" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="Login" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/lvl_storeclose" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_store_close" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:textColor="#fff64367" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/restaurant_is_currently_close" />
+                <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lvl_resprent" android:background="#ff171a29" android:padding="8.0dip" android:layout_width="230.0dip" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_similar" android:textAllCaps="true" />
+                    <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restaurant" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/lvl_addaadress" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_your_delivery_location" />
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/this_help_us_deliver_" android:maxLines="3" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_addaddres" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/set_location" android:textAllCaps="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

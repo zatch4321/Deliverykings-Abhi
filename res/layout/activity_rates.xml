@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_arrow" />
+        <TextView android:textStyle="bold" android:textColor="@color/black" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rate_your_order" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_top" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/emty" android:scaleType="fitXY" />
+            <ImageView android:id="@id/img_top2" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/emty" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:id="@id/txt_time" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:id="@id/txt_storename" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:id="@id/txt_ridername" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/lvl_itmelist" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+        <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0dip" android:textColor="@color/black" android:id="@id/txt_ratetitle" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="How was the food " />
+            <TextView android:textSize="12.0dip" android:id="@id/txt_ratetitile2" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Please rate the " style="@style/Font" />
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/recy_rats" android:layout_width="wrap_content" android:layout_height="150.0dip" android:layout_marginTop="15.0dip" />
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="120.0dip">
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_countinu" android:background="@drawable/rounded_button" android:padding="15.0dip" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/continues" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_submit" android:background="@drawable/rounded_button" android:padding="15.0dip" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/submit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

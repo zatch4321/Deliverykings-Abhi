@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.cscodetech.deliveryking.utility.AutoScrollViewPager android:id="@id/vpPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/black" android:id="@id/txt_ignore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:text="IGNORE" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center|top" android:layout_gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator android:id="@id/dots_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" app:dotsColor="@color/colorgrey" app:dotsCornerRadius="8.0dip" app:dotsSize="12.0dip" app:dotsSpacing="10.0dip" app:dotsWidthFactor="2.5" app:selectedDotColor="@color/colorAccent" app:stiffness="300.0" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="32.0dip" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_next" android:background="@drawable/rounded_nextb" android:layout_width="150.0dip" android:layout_height="42.0dip" android:layout_marginBottom="15.0dip" android:text="Next" />
+    </LinearLayout>
+</LinearLayout>

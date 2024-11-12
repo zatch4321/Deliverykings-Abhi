@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="142.0dip" android:src="@drawable/login1" />
+            <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/txt_mob" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="" />
+            <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/ed_otp1" android:background="@drawable/box" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:maxLength="1" android:inputType="number" />
+                    <EditText android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/ed_otp2" android:background="@drawable/box" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:maxLength="1" android:inputType="number" />
+                    <EditText android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/ed_otp3" android:background="@drawable/box" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:maxLength="1" android:inputType="number" />
+                    <EditText android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/ed_otp4" android:background="@drawable/box" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:maxLength="1" android:inputType="number" />
+                    <EditText android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/ed_otp5" android:background="@drawable/box" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:maxLength="1" android:inputType="number" />
+                    <EditText android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/ed_otp6" android:background="@drawable/box" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginRight="5.0dip" android:maxLength="1" android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15.0dip">
+            <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Did not receive the code?" />
+            <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_reenter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="Re-Send" android:elevation="10.0dip" />
+            <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_timer" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="30" android:elevation="10.0dip" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_send" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:text="Submit" android:elevation="10.0dip" />
+            <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

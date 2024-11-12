@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="26" android:compileSdkVersionCodename="12" package="com.cscodetech.deliveryking" platformBuildVersionCode="26" platformBuildVersionName="12">
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <permission android:name="com.cscodetech.deliveryking.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.cscodetech.deliveryking.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <queries>
+        <package android:name="com.google.android.apps.maps"/>
+    </queries>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <application android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="DeliveryKings@Abhi" android:name="ht.sjbiv.sbnmsvvul.txmodhovcatbcfmnep" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Csfoodapp.NoActionBar" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:name="com.cscodetech.deliveryking.activity.LanguageActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.FaqActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.ChanegPasswordActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.ReferlActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.HelpDetailsActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.AddMoneyActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.MywalletActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.SearchProductActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.SearchVendorItemActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.SearchRestorentActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.RatesActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.OrderStoreActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.AddressListActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.OrderActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.OrderTrackerActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.RestorentOrderActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.AccountActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.PaypalActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.PaystackActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.RazerpayActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.StripPaymentActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.FlutterwaveActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.SenangpayActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.PaytmActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CartActivityVendor"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.RestaurantActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CoupunActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CartActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.VerifyPhoneActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.VendorActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.HomeActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CuoriarPayNowActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CuoriaritemActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.MainActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CourierActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.ForgotActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CreateAccountActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.LoginActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.MapActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CuoriarOrderActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.CourierOrderDetailsActivity"/>
+        <activity android:exported="true" android:name="com.cscodetech.deliveryking.activity.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/api_key"/>
+        <provider android:authorities="com.cscodetech.deliveryking.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="com.stripe.android.view.AddPaymentMethodActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.stripe.android.view.PaymentMethodsActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.stripe.android.view.PaymentFlowActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.stripe.android.view.PaymentAuthWebViewActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.stripe.android.view.PaymentRelayActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.stripe.android.view.Stripe3ds2CompletionActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity" android:theme="@style/Stripe3DS2Theme"/>
+        <activity android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity" android:theme="@style/Stripe3DS2Theme"/>
+        <receiver android:exported="true" android:name="com.onesignal.FCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.cscodetech.deliveryking"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.onesignal.HmsMessageServiceOneSignal">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.onesignal.NotificationOpenedActivityHMS" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.onesignal.FCMIntentService"/>
+        <service android:exported="false" android:name="com.onesignal.FCMIntentJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.onesignal.SyncService" android:stopWithTask="true"/>
+        <service android:exported="false" android:name="com.onesignal.SyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.onesignal.PermissionsActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.onesignal.NotificationDismissReceiver"/>
+        <receiver android:exported="true" android:name="com.onesignal.BootUpReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.onesignal.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.NotificationOpenedReceiver" android:noHistory="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.razorpay.RzpTokenReceiver">
+            <intent-filter>
+                <action android:name="rzp.device_token.share"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.razorpay.CheckoutActivity" android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <data android:host="rzp.io" android:scheme="io.rzp"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.FederatedSignInActivity" android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity"/>
+        <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity"/>
+        <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"/>
+        <activity android:name="co.paystack.android.ui.PinActivity" android:theme="@style/Paystack.Dialog.PinEntry"/>
+        <activity android:name="co.paystack.android.ui.OtpActivity" android:theme="@style/Paystack.Dialog.OtpEntry"/>
+        <activity android:name="co.paystack.android.ui.AuthActivity" android:theme="@style/Paystack.Dialog.OtpEntry"/>
+        <activity android:name="co.paystack.android.ui.CardActivity" android:theme="@style/Paystack.Dialog.CardEntry"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.cscodetech.deliveryking.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.cscodetech.deliveryking.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+    </application>
+</manifest>

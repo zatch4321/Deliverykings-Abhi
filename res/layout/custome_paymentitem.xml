@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <ImageView android:id="@id/img_icon" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_title" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pay on Delivery" android:maxLines="2" />
+            <TextView android:textSize="10.0dip" android:textStyle="normal" android:id="@id/txt_subtitel" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Self Pickup" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="5.0dip" />
+</LinearLayout>

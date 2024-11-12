@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="3.0dip" android:layout_above="@id/lvl_cart">
+        <com.google.android.material.appbar.AppBarLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll|enterAlways" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_left_arrow" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_title" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/img_back" android:layout_marginStart="0.0dip" android:layout_marginEnd="5.0dip">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" android:fontFamily="@font/gilroybold" />
+                            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:gravity="center" android:id="@id/txt_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/info" android:layout_weight="2.0" android:fontFamily="@font/gilroybold" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorgrey2" android:id="@id/txt_ladmark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/gilroybold" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorgrey2" android:id="@id/txt_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_time" android:drawablePadding="5.0dip" android:fontFamily="@font/gilroybold" />
+                            <View android:layout_gravity="center" android:background="@color/black" android:layout_width="2.0dip" android:layout_height="2.0dip" android:layout_margin="5.0dip" />
+                            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/txt_dist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info" android:fontFamily="@font/gilroybold" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/linear_offers" android:background="@drawable/squre" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lvl_title">
+                        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/lvl_actionsearch" android:background="@drawable/rounded_search" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" android:elevation="1.0dip" android:backgroundTint="@color/colorgrey1">
+                            <ImageView android:id="@id/img_search" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_search" />
+                            <TextView android:textColor="@color/colorgrey" android:textColorHint="@color/colorgrey" android:gravity="center|left" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/search_for_item" android:ems="10" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="3.0">
+                            <TextView android:textColor="@color/colorgrey2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/veg_only" />
+                            <androidx.appcompat.widget.SwitchCompat android:id="@id/swich" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:thumb="@drawable/custom_thumb" app:track="@drawable/custom_track" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <com.cscodetech.deliveryking.utility.MyTabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabMode="scrollable" app:tabSelectedTextColor="@color/colorPrimary" app:tabTextColor="@color/colorgrey2" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.cardview.widget.CardView android:id="@id/lvl_cart" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentBottom="true" android:backgroundTint="@color/white" app:cardElevation="5.0dip">
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="15.0dip" android:src="@drawable/ic_cart" />
+                <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_itemtotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/item" />
+                <TextView android:textColor="@color/colorPrimary" android:id="@id/txt_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="$ " />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/txt_viewcart" android:background="@drawable/rounded_button" android:padding="3.0dip" android:layout_width="100.0dip" android:layout_height="30.0dip" android:text="@string/view_cart" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

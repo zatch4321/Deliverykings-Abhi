@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lvl1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:background="#fff2f5fc" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center|left" android:id="@id/txt_title" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:text="Product Name" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="10.0dip">
+            <TextView android:textSize="14.0dip" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:text="@string/your_previous_customization" />
+            <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/txt_choose" android:background="@drawable/rounded_courner_emty" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:text="@string/i_ll_choose" android:layout_weight="1.0" />
+                <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_repeat" android:background="@drawable/rounded_courner" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/repeat" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="25.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

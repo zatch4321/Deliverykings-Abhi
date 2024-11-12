@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/StripeToolBarStyle" android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="@dimen/stripe_toolbar_elevation" app:title="@string/secure_checkout" />
+    <FrameLayout android:id="@id/auth_web_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar">
+        <com.stripe.android.view.PaymentAuthWebView android:id="@id/auth_web_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/auth_web_view_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar" />
+</RelativeLayout>

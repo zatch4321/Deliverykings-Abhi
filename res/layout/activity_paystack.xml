@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppBottomSheetDialogTheme" android:gravity="center" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:elevation="5.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:popupTheme="@style/AppBottomSheetDialogTheme">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_back" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_arrow" />
+                    <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center|left" android:layout_gravity="center" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="PayStack" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_centerInParent="true">
+        <EditText android:textSize="14.0sp" android:textColor="@android:color/black" android:textColorHint="@color/colorgrey" android:id="@id/cardNumberEditText" android:background="@drawable/bg_card_cvc_edit_text" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="-0.25dip" android:hint="Card number" android:drawableRight="@drawable/ic_credit_card" android:inputType="phone" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <EditText android:textSize="14.0sp" android:textColor="@android:color/black" android:textColorHint="@color/colorgrey" android:id="@id/cardDateEditText" android:background="@drawable/bg_card_cvc_edit_text" android:padding="16.0dip" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginRight="-0.25dip" android:hint="MM/YY" android:drawableRight="@drawable/ic_date_range" android:layout_weight="1.0" android:inputType="date" />
+            <EditText android:textSize="14.0sp" android:textColor="@android:color/black" android:textColorHint="@color/colorgrey" android:id="@id/cardCVCEditText" android:background="@drawable/bg_card_cvc_edit_text" android:padding="16.0dip" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="-0.25dip" android:hint="CVC" android:layout_weight="1.0" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="20.0dip" android:elevation="10.0dip">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_submit" android:background="@drawable/rounded_button" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Submit" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

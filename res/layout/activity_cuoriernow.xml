@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:gravity="center" android:id="@id/appBarLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:elevation="5.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_back" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_arrow" android:tint="@color/white" />
+                    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center|left" android:layout_gravity="center" android:id="@id/txt_actiontitle" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/send_package" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:backgroundTint="@color/white" app:cardCornerRadius="8.0dip" app:cardElevation="7.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_address1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map_pin" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="14.0dip" android:textStyle="bold" android:id="@id/txt_type1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" />
+                                <TextView android:textSize="12.0dip" android:id="@id/txt_address1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="214 ambika motavarachha" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/img_editeaddress1" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+                        </LinearLayout>
+                        <EditText android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/ed_mobile1" android:background="@drawable/box" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:hint="@string/enter_phone_number" android:inputType="phone" />
+                        <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/lvl_noaddress1" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map_pin" />
+                        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pickup_address" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/txt_addaddress1" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+                    </LinearLayout>
+                    <View android:background="@color/colorgrey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/lvl_address2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map_pin" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:textSize="14.0dip" android:textStyle="bold" android:id="@id/txt_type2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home" />
+                                <TextView android:textSize="12.0dip" android:id="@id/txt_address2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="214 ambika motavarachha" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/img_editeaddress2" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+                        </LinearLayout>
+                        <EditText android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/ed_mobile2" android:background="@drawable/box" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:hint="@string/enter_phone_number" android:inputType="phone" />
+                        <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lvl_noaddress2" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map_pin" />
+                        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/drop_address" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/txt_addaddress2" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:backgroundTint="@color/white" app:cardCornerRadius="8.0dip" app:cardElevation="7.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_task_details" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/txt_addimage" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.5">
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:backgroundTint="@color/white" app:cardCornerRadius="8.0dip" app:cardElevation="7.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/distance" android:layout_weight="1.0" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+                            <TextView android:gravity="right" android:id="@id/txt_distans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delivery_charge" android:layout_weight="1.0" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+                            <TextView android:gravity="right" android:id="@id/txt_dcharge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_paynow" android:background="@drawable/rounded_button1" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/pay_now" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

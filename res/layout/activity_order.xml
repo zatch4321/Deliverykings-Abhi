@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_arrow" />
+            <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_orderid" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ORDER ID#" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:src="@drawable/ic_map_pin" />
+                    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textColor="@color/colorPrimary" android:id="@id/txt_rtitle" android:paddingLeft="5.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="12.0dip" android:id="@id/txt_rlocation" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" style="@style/Font" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_gravity="left" android:background="@drawable/dotted" android:layout_width="65.0dip" android:layout_height="10.0dip" android:rotation="90.0" android:layerType="software" />
+                <LinearLayout android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" android:src="@drawable/ic_map_pin" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textColor="@color/black" android:id="@id/txt_customer" android:paddingLeft="5.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="12.0dip" android:id="@id/txt_caddress" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" style="@style/Font" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="wrap_content" android:layout_height="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:padding="5.0dip" android:layout_width="55.0dip" android:layout_height="wrap_content" />
+                    <View android:background="@color/colorgrey" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/lvl_completdate" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="12.0dip" android:id="@id/txt_deliveryboy" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ahdkjahdk" style="@style/Font" />
+                        <TextView android:textSize="12.0dip" android:id="@id/txt_completdate" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ahdkjahdk" style="@style/Font" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@color/colorgrey1" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0dip" android:gravity="center|left" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bill_details" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/lvl_itmelist" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="left" android:background="@drawable/dotted" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/item_total" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_itemtotal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <LinearLayout android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delivery_fee" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_dcharge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/lvl_deliverytips" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/delivery_tip" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_dtips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/lvl_storecharge" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/store_charge" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_storecharge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/lvl_texandcharge" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/taxes_and_charges" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_taxcharge" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/lvl_discount" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/total_discount" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_discount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/lvl_wallet" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wallet_amount" android:layout_weight="1.0" style="@style/Font" />
+                        <TextView android:gravity="center|right" android:id="@id/txt_wallet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="@style/Font" />
+                    </LinearLayout>
+                    <View android:background="@color/colorgrey1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" />
+                    <LinearLayout android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textColor="@color/black" android:id="@id/txt_pmethod" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/to_pay" android:layout_weight="1.0" />
+                        <TextView android:textColor="@color/black" android:gravity="center|right" android:id="@id/txt_topay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img_back" android:background="?android:selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_arrow" />
+                <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center|left" android:layout_gravity="center" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/myaacount" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_name" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Hi, cscodetech" />
+                    <TextView android:gravity="center_vertical" android:id="@id/txt_phone" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="+919876543210" android:drawableLeft="@drawable/ic_phone" android:drawablePadding="5.0dip" />
+                    <TextView android:gravity="center_vertical" android:id="@id/txt_email" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="cscode@gmail.com" android:drawableLeft="@drawable/ic_email" android:drawablePadding="5.0dip" />
+                </LinearLayout>
+                <TextView android:textSize="16.0dip" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/txt_edit" android:padding="5.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="@string/edit" android:drawableRight="@drawable/ic_right" />
+            </LinearLayout>
+            <View android:background="@color/colorgrey1" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+            <LinearLayout android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cart_bottom" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/txt_recentorder" android:background="?android:selectableItemBackground" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recent_order" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cart_bottom" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/txt_cuorier" android:background="?android:selectableItemBackground" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/courier_order" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lvl_address" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_map_pin" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/manage_address" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lvl_wallet" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_wallet" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wallet" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lvl_language" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lang" android:tint="@color/black" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/language" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lvl_refer" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_referandearn" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invite_friend_amp_earn" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/lvl_faq" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_faq" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faq_s" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_product" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:id="@id/lvl_logout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+                <ImageView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logout" />
+                <TextView android:textColor="@color/black" android:gravity="center_vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/logout" android:drawableRight="@drawable/ic_right" android:drawableTint="@color/colorgrey" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="160.0dip">
+                <ImageView android:id="@id/img_back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/ic_left_arrow" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="140.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/login1" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="@string/let_s_get_started" />
+            <TextView android:textSize="12.0dip" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="@string/create_an_account" />
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+                <EditText android:textColor="@color/black" android:id="@id/ed_name" android:background="@drawable/edittext_box" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/ename" android:drawableLeft="@drawable/ic_user" android:drawablePadding="5.0dip" android:inputType="text" />
+                <EditText android:textColor="@color/black" android:id="@id/ed_email" android:background="@drawable/edittext_box" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:hint="@string/eemail" android:drawableLeft="@drawable/ic_email" android:drawablePadding="5.0dip" android:inputType="text" />
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/edittext_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <View android:layout_width="10.0dip" android:layout_height="2.0dip" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_phone" />
+                    <Spinner android:id="@id/spinner" android:layout_width="100.0dip" android:layout_height="50.0dip" />
+                    <EditText android:textColor="@color/black" android:id="@id/ed_mobile" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/emobile" android:inputType="phone" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/edittext_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                    <EditText android:id="@id/ed_password" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="@string/epassword" android:drawableLeft="@drawable/ic_password" android:drawablePadding="5.0dip" android:layout_weight="1.0" android:inputType="textPassword" />
+                    <ImageView android:id="@id/show_pass_btn" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_eye" android:onClick="showHidePass" android:alpha="0.5" />
+                </LinearLayout>
+                <EditText android:textColor="@color/black" android:id="@id/ed_refercode" android:background="@drawable/edittext_box" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:hint="@string/refer_code" android:drawableLeft="@drawable/ic_referandearn" android:drawablePadding="5.0dip" android:inputType="text" />
+                <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+                <LinearLayout android:gravity="center" android:background="@drawable/rounded_button" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:elevation="10.0dip">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/btn_signup" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/sign_up" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="30.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/black" android:gravity="center|right" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="@string/don_t_have_an_account" />
+                    <TextView android:textColor="@color/colorPrimary" android:gravity="center|left" android:id="@id/btn_sign" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="5.0dip" android:text="@string/sign_in" />
+                </LinearLayout>
+                <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
